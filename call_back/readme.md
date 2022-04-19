@@ -8,7 +8,8 @@ A函数就是回调函数。
 
 ### 回调函数定义
 
-´´´´
+
+````
 // 可以声明在结构体里面
 typedef struct
 {
@@ -17,4 +18,5 @@ typedef struct
 	void (*statusChange)();
 
 }T_Device;
-´´´´
+
+````
