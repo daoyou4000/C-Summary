@@ -38,4 +38,15 @@ void v_RegisterCallBack(void(*pStatusChange)(int status))
 {
 	g_Device.statusChange = pStatusChange;
 }
+
+// another is way is use the address directly
+g_Device.statusChange = &callBack();
+
+// make the function pointer as the arguement
+
+int play(p_callBackFunc_1 fn, char * name)
+{
+	return fn(name);
+}
+
 ````
