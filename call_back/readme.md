@@ -20,7 +20,7 @@ typedef struct
 }T_Device;
 
 ````
-也可以使用typedef
+也可以使用typedef 进行声明
 ````
 
 // declare a call back function without arguement.
@@ -30,4 +30,12 @@ typedef int (*p_callBackFunc_1)(char * num);
 
 // declare a call back function 2 arguement.
 typedef int (*p_callBackFunc_2)(int num_1, int num_2);
+````
+
+如何注册或者调用回调函数，注册回调函数其实是获取函数指针的过程。
+````
+void v_RegisterCallBack(void(*pStatusChange)(int status))
+{
+	g_Device.statusChange = pStatusChange;
+}
 ````
