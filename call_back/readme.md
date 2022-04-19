@@ -20,3 +20,14 @@ typedef struct
 }T_Device;
 
 ````
+也可以使用typedef
+````
+
+// declare a call back function without arguement.
+typedef int (*p_callBackFunc)();
+// declare a call back function 1 arguement.
+typedef int (*p_callBackFunc_1)(char * num);
+
+// declare a call back function 2 arguement.
+typedef int (*p_callBackFunc_2)(int num_1, int num_2);
+````
